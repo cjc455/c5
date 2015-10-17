@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+  <style>
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+    }
+
+
+    span.completed {
+      color: green;
+      text-decoration: line-through;
+    }
+
+    span.uncompleted {
+      color: blue;
+    }
+
+  </style>
+    <script src="MVC.js"></script>
+  <script>
+
+      window.onload = function() {
+          setMVC();
+      };
+
+
+  </script>
+
+
+</head>
+
+<body onload="initPage()">
+
+    <button onclick="clearTodo()">Clear All</button>
+    <button onclick="addTodo()">Add</button>
+    <input type="text" id="todoText" rows="1" cols="50" placeholder="Todo..">
+    <p>Number of todo's: <span id="todoCount"></span></p>
+    <ul id="listDisplay"></ul>
+
+</body>
+</html>
